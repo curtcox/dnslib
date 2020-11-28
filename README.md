@@ -285,15 +285,15 @@ A number of sample resolvers are provided as examples (see CLI --help):
 
 The library includes a number of client utilities:
 
- * DiG like client library
+ * DiG like [client](dnslib/client.py) library
 
         # python -m dnslib.client --help
 
- * DNS Proxy Server
+ * DNS [Proxy Server](dnslib/proxy.py)
 
         # python -m dnslib.proxy --help
 
- * Intercepting DNS Proxy Server (replace proxy responses for specified domains)
+ * [Intercepting](dnslib/intercept.py) DNS Proxy Server (replace proxy responses for specified domains)
 
         # python -m dnslib.intercept --help
 
