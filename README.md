@@ -15,11 +15,11 @@ The library provides:
    python objects, and Zone/DiG textual representation (dnslib.dns)
 
  * A server framework allowing the simple creation of custom DNS
-   resolvers (dnslib.server) and a number of example servers
+   resolvers ([dnslib.server](dnslib/server.py)) and a number of example servers
    created using this framework
 
- * A number of utilities for testing (dnslib.client, dnslib.proxy,
-   dnslib.intercept)
+ * A number of utilities for testing ([dnslib.client](dnslib/client.py), [dnslib.proxy](dnslib/proxy.py),
+   [dnslib.intercept](dnslib/intercept.py))
 
 Python 3 support was added in Version 0.9.0 which represented a fairly
 major update to the library - the key changes include:
@@ -27,7 +27,7 @@ major update to the library - the key changes include:
  * Python 2.7/3.2+ support (the last version supporting Python 2.6
    or earlier was version 0.8.3)
 
- * The 'Bimap' interface was changed significantly to explicitly
+ * The '[Bimap](dnslib/bimap.py)' interface was changed significantly to explicitly
    split forward (value->text) lookups via __getitem__ and
    reverse (text->value) lookups via __getattr__. Applications
    using the old interface will need to be updated.
